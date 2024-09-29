@@ -11,18 +11,26 @@ namespace learn_2
     {
         static void Main(string[] args)
         {
-            int a = 5;
-            a -= 1;
-            Console.WriteLine(a);
-            int b = 5;
-            b *= 3;
-            Console.WriteLine(b);
-            Console.WriteLine(a == b);
-            bool Logic1 = a != b;
-            bool Logic2 = (a %= 2) == 0;
-            Console.WriteLine(Logic1 && Logic2 );
-            Console.WriteLine(b != a);
+            string Input;
+            Console.WriteLine($"Nhap diem Toan:");
+            Input = Console.ReadLine();
+            string a = Input;
+            Console.WriteLine($"Nhap diem Van:");
+            Input = Console.ReadLine();
+            string b = Input;
+            Console.WriteLine($"Nhap diem Anh:");
+            Input = Console.ReadLine();
+            string c = Input;
+            int A = int.Parse(a);
+            int B = int.Parse(b);
+            int C = int.Parse(c);
+            A *= 3; B *= 3; C *= 2;
+            float d = A + B + C;
+            d /= 8;
+            Console.WriteLine($"Diem trung binh 3 mon la: {d}");
             Console.ReadLine();
+
+
         }
     }
 }
