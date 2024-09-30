@@ -13,37 +13,53 @@ namespace learn_2
     {
         static void Main(string[] args)
         {
-            int Choose;
-            string Ten;
-            int Tuoi;
-            string DiaChi;
-            Console.WriteLine("Nhap ten:");
-                Ten = Console.ReadLine();
-                
-            Console.WriteLine("Nhap tuoi:");
-                Tuoi = int.Parse(Console.ReadLine());
-            Console.WriteLine("Dia chi:");
-                DiaChi = Console.ReadLine(); 
-            Console.WriteLine("1.Ten");
-            Console.WriteLine("2.Tuoi");
-            Console.WriteLine("3.Dia Chi");
-                Choose = int.Parse(Console.ReadLine());
-            switch (Choose)
+            int So;
+            Console.WriteLine("Nhap so tu 1 den 9:");
+                So = int.Parse(Console.ReadLine());
+            if (So >= 0 & So <= 9) 
             {
-                case 1:
-                    Console.WriteLine($"Ten la: {Ten}");
-                    break;
-                case 2:
-                    Console.WriteLine($"{Tuoi} tuoi");
-                    break;
-                case 3:
-                    Console.WriteLine($"Dia chi la: {DiaChi}");
-                    break;
-                default:
-                    Console.WriteLine("Vui long chon lai");
-                    break;
+                switch (So)
+                {
+                    case 0:
+                        Console.WriteLine("So khong");
+                        break;
+                    case 1:
+                        Console.WriteLine("So mot");
+                        break;
+                    case 2:
+                        Console.WriteLine("So hai");
+                        break;
+                    case 3:
+                        Console.WriteLine("So ba");
+                        break;
+                    case 4:
+                        Console.WriteLine("So bon");
+                        break;
+                    case 5:
+                        Console.WriteLine("So nam");
+                        break;
+                    case 6:
+                        Console.WriteLine("So sau");
+                        break;
+                    case 7:
+                        Console.WriteLine("So bay");
+                        break;
+                    case 8:
+                        Console.WriteLine("So tam");
+                        break;
+                    case 9:
+                        Console.WriteLine("So chin");
+                        break;
+                }
             }
+
+
+            else
+                {
+                    Console.WriteLine("Sai");
+                }
             Console.ReadLine();
+            
         }
     }
 }
