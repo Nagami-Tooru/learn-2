@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,26 +13,37 @@ namespace learn_2
     {
         static void Main(string[] args)
         {
-            string Input;
-            Console.WriteLine($"Nhap diem Toan:");
-            Input = Console.ReadLine();
-            string a = Input;
-            Console.WriteLine($"Nhap diem Van:");
-            Input = Console.ReadLine();
-            string b = Input;
-            Console.WriteLine($"Nhap diem Anh:");
-            Input = Console.ReadLine();
-            string c = Input;
-            int A = int.Parse(a);
-            int B = int.Parse(b);
-            int C = int.Parse(c);
-            A *= 3; B *= 3; C *= 2;
-            float d = A + B + C;
-            d /= 8;
-            Console.WriteLine($"Diem trung binh 3 mon la: {d}");
+            int Choose;
+            string Ten;
+            int Tuoi;
+            string DiaChi;
+            Console.WriteLine("Nhap ten:");
+                Ten = Console.ReadLine();
+                
+            Console.WriteLine("Nhap tuoi:");
+                Tuoi = int.Parse(Console.ReadLine());
+            Console.WriteLine("Dia chi:");
+                DiaChi = Console.ReadLine(); 
+            Console.WriteLine("1.Ten");
+            Console.WriteLine("2.Tuoi");
+            Console.WriteLine("3.Dia Chi");
+                Choose = int.Parse(Console.ReadLine());
+            switch (Choose)
+            {
+                case 1:
+                    Console.WriteLine($"Ten la: {Ten}");
+                    break;
+                case 2:
+                    Console.WriteLine($"{Tuoi} tuoi");
+                    break;
+                case 3:
+                    Console.WriteLine($"Dia chi la: {DiaChi}");
+                    break;
+                default:
+                    Console.WriteLine("Vui long chon lai");
+                    break;
+            }
             Console.ReadLine();
-
-
         }
     }
 }
