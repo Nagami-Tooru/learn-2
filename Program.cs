@@ -13,53 +13,39 @@ namespace learn_2
     {
         static void Main(string[] args)
         {
+            int A;
+            int B;
+            Console.WriteLine("Nhap A:"); 
+                A = int.Parse(Console.ReadLine());
+            Console.WriteLine("Nhap B:"); 
+                B = int.Parse(Console.ReadLine());
+            Console.WriteLine("1:Tong");
+                Console.WriteLine("2:Tru");
+                Console.WriteLine("3:Tich");
+                Console.WriteLine("4:Thuong");
             int So;
-            Console.WriteLine("Nhap so tu 1 den 9:");
-                So = int.Parse(Console.ReadLine());
-            if (So >= 0 & So <= 9) 
-            {
-                switch (So)
+                    So = int.Parse(Console.ReadLine());
+
+            switch (So)
                 {
-                    case 0:
-                        Console.WriteLine("So khong");
-                        break;
                     case 1:
-                        Console.WriteLine("So mot");
-                        break;
+                        So = A + B;
+                        Console.WriteLine($"Tong AB la:{So}");
+                    break;
                     case 2:
-                        Console.WriteLine("So hai");
-                        break;
+                        So = A - B;
+                    Console.WriteLine($"Hieu AB la:{So}");
+                    break;
                     case 3:
-                        Console.WriteLine("So ba");
-                        break;
+                        So = A * B;
+                        Console.WriteLine($"Tich AB la:{So}"); 
+                    break;
                     case 4:
-                        Console.WriteLine("So bon");
-                        break;
-                    case 5:
-                        Console.WriteLine("So nam");
-                        break;
-                    case 6:
-                        Console.WriteLine("So sau");
-                        break;
-                    case 7:
-                        Console.WriteLine("So bay");
-                        break;
-                    case 8:
-                        Console.WriteLine("So tam");
-                        break;
-                    case 9:
-                        Console.WriteLine("So chin");
-                        break;
-                }
-            }
-
-
-            else
-                {
-                    Console.WriteLine("Sai");
+                        So = A / B;
+                        Console.WriteLine($"Thuong AB la:{So}");
+                    break;
                 }
             Console.ReadLine();
-            
         }
     }
 }
