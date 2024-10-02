@@ -19,10 +19,11 @@ namespace learn_2
                 A = int.Parse(Console.ReadLine());
             Console.WriteLine("Nhap B:"); 
                 B = int.Parse(Console.ReadLine());
-            Console.WriteLine("1:Tong");
+                Console.WriteLine("Chon phep tinh:");
+                Console.WriteLine("1:Cong");
                 Console.WriteLine("2:Tru");
-                Console.WriteLine("3:Tich");
-                Console.WriteLine("4:Thuong");
+                Console.WriteLine("3:Nhan");
+                Console.WriteLine("4:Chia");
             int So;
                     So = int.Parse(Console.ReadLine());
 
