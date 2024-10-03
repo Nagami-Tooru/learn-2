@@ -14,41 +14,18 @@ namespace learn_2
         static void Main(string[] args)
         {
             int A;
-            int B;
-            int C;
-            int D;
-            Console.WriteLine("Nhap A:");
-                A = int.Parse(Console.ReadLine());
-            Console.WriteLine("Nhap B");
-                B = int.Parse(Console.ReadLine());
-            D = A;
-            C = (D %= 3);
-            switch (C)
+            Console.WriteLine("Nhap 1 so");
+            A = int.Parse(Console.ReadLine());
+            if (A >= 0 && A <= 9)
             {
-                case 0:
-                    for (int i = A; i <= B; i += 3)
-                    {
-                        Console.WriteLine(i);
-                    }
-                    break;
-                case 1:
-                    A += 2;
-                    for (int i = A; i <= B; i += 3)
-                    {
-                        Console.WriteLine(i);
-                    }
-                    break;
-                case 2:
-                    A += 1;
-                    for (int i = A; i <= B; i += 3)
-                    {
-                        Console.WriteLine(i);
-                    }
-                    break;
+                for (int i = 1; i <= 10; i++)
+                {
+                    Console.WriteLine($"{A}X{i}={A * i}");
+                }
+
             }
-           Console.ReadLine();
-            
-            
+            else { }
+            Console.ReadLine();
         }
     }
 }
