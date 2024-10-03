@@ -24,7 +24,10 @@ namespace learn_2
                 }
 
             }
-            else { }
+            else 
+            { 
+                Console.WriteLine("SAI!");
+            }
             Console.ReadLine();
         }
     }
