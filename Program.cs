@@ -15,37 +15,19 @@ namespace learn_2
         {
             int A;
             int B;
-            Console.WriteLine("Nhap A:"); 
+            Console.WriteLine("Nhap A:");
                 A = int.Parse(Console.ReadLine());
-            Console.WriteLine("Nhap B:"); 
+            Console.WriteLine("Nhap B:");
                 B = int.Parse(Console.ReadLine());
-                Console.WriteLine("Chon phep tinh:");
-                Console.WriteLine("1:Cong");
-                Console.WriteLine("2:Tru");
-                Console.WriteLine("3:Nhan");
-                Console.WriteLine("4:Chia");
-            int So;
-                    So = int.Parse(Console.ReadLine());
-
-            switch (So)
-                {
-                    case 1:
-                        So = A + B;
-                        Console.WriteLine($"Tong AB la:{So}");
-                    break;
-                    case 2:
-                        So = A - B;
-                    Console.WriteLine($"Hieu AB la:{So}");
-                    break;
-                    case 3:
-                        So = A * B;
-                        Console.WriteLine($"Tich AB la:{So}"); 
-                    break;
-                    case 4:
-                        So = A / B;
-                        Console.WriteLine($"Thuong AB la:{So}");
-                    break;
-                }
+            for (int i = A; i <= B; i++)
+            {
+                Console.WriteLine(i);
+            }
+            B--;
+            for (int i = B; i >= A; i--)
+            {  
+                Console.WriteLine(i); 
+            }
             Console.ReadLine();
         }
     }
