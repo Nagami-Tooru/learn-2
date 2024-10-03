@@ -14,19 +14,11 @@ namespace learn_2
         static void Main(string[] args)
         {
             int A;
-            int B;
             Console.WriteLine("Nhap A:");
                 A = int.Parse(Console.ReadLine());
-            Console.WriteLine("Nhap B:");
-                B = int.Parse(Console.ReadLine());
-            for (int i = A; i <= B; i++)
-            {
+            for (int i = 3; i <= A; i += 3) 
+            { 
                 Console.WriteLine(i);
-            }
-            B--;
-            for (int i = B; i >= A; i--)
-            {  
-                Console.WriteLine(i); 
             }
             Console.ReadLine();
         }
