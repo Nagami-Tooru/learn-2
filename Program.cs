@@ -16,22 +16,30 @@ namespace learn_2
             int A;
             int B;
             int C;
-                Console.WriteLine("Nhap so A:");
+                Console.WriteLine("Nhap A:");
                     A = int.Parse(Console.ReadLine());
-                Console.WriteLine("Nhap so B:");
+                Console.WriteLine("Nhap B:");
                     B = int.Parse(Console.ReadLine());
-                C = A;
-            while (C < B)
+            while (B <= A)
             {
-                Console.WriteLine(C);
-                    C++;
+                Console.WriteLine("Nhap lai");
+                    Console.WriteLine("A:");
+                A = int.Parse(Console.ReadLine());
+                    Console.WriteLine("B:");
+                B = int.Parse(Console.ReadLine());
             }
-            while (A <= B) 
-            { 
-                Console.WriteLine(B);
-                B--;
+            C = A % 3;
+            while (C != 0)
+            {
+                A++;
+                C = A % 3;
             }
-                Console.ReadLine();
+            while (B >= A)
+            {
+                Console.WriteLine(A);
+                A = A + 3;
+            }
+            Console.ReadLine();
         }
     }
 }
