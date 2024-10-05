@@ -14,21 +14,24 @@ namespace learn_2
         static void Main(string[] args)
         {
             int A;
-            Console.WriteLine("Nhap 1 so");
-            A = int.Parse(Console.ReadLine());
-            if (A >= 0 && A <= 9)
+            int B;
+            int C;
+                Console.WriteLine("Nhap so A:");
+                    A = int.Parse(Console.ReadLine());
+                Console.WriteLine("Nhap so B:");
+                    B = int.Parse(Console.ReadLine());
+                C = A;
+            while (C < B)
             {
-                for (int i = 1; i <= 10; i++)
-                {
-                    Console.WriteLine($"{A}X{i}={A * i}");
-                }
-
+                Console.WriteLine(C);
+                    C++;
             }
-            else 
+            while (A <= B) 
             { 
-                Console.WriteLine("SAI!");
+                Console.WriteLine(B);
+                B--;
             }
-            Console.ReadLine();
+                Console.ReadLine();
         }
     }
 }
