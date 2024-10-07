@@ -13,33 +13,22 @@ namespace learn_2
     {
         static void Main(string[] args)
         {
-            int A;
-            int B;
-            int C;
-                Console.WriteLine("Nhap A:");
-                    A = int.Parse(Console.ReadLine());
-                Console.WriteLine("Nhap B:");
-                    B = int.Parse(Console.ReadLine());
-            while (B <= A)
-            {
-                Console.WriteLine("Nhap lai");
-                    Console.WriteLine("A:");
-                A = int.Parse(Console.ReadLine());
-                    Console.WriteLine("B:");
-                B = int.Parse(Console.ReadLine());
-            }
-            C = A % 3;
-            while (C != 0)
-            {
-                A++;
-                C = A % 3;
-            }
-            while (B >= A)
-            {
-                Console.WriteLine(A);
-                A = A + 3;
-            }
+            int a;
+            int b;
+            Console.WriteLine("Nhap A:");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Nhap B:");
+            b = int.Parse(Console.ReadLine());
+            int Tich;
+            AB(a, b);
             Console.ReadLine();
         }
+        static int AB(int a, int b)
+        {
+            int Tich = a * b;
+            Console.WriteLine($"Tich AB:{Tich}");
+            return Tich;
+        }
+
     }
 }
