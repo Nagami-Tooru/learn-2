@@ -13,22 +13,21 @@ namespace learn_2
     {
         static void Main(string[] args)
         {
-            int a;
-            int b;
-            Console.WriteLine("Nhap A:");
-            a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Nhap B:");
-            b = int.Parse(Console.ReadLine());
-            int Tich;
-            AB(a, b);
+            string Ten;
+            int Tuoi;
+            string thongTin;
+            Console.WriteLine("Nhap ten");
+            Ten = Console.ReadLine();
+            Console.WriteLine("Nhap tuoi");
+            Tuoi = int.Parse(Console.ReadLine());
+            thongTin = Ten + Tuoi;
+            ThongTin(thongTin);
             Console.ReadLine();
         }
-        static int AB(int a, int b)
-        {
-            int Tich = a * b;
-            Console.WriteLine($"Tich AB:{Tich}");
-            return Tich;
-        }
-
+        static string ThongTin(string thongTin)
+            {
+            Console.WriteLine(thongTin);
+            return Console.ReadLine();
+            }
     }
 }
