@@ -13,21 +13,18 @@ namespace learn_2
     {
         static void Main(string[] args)
         {
-            string Ten;
-            int Tuoi;
-            string thongTin;
-            Console.WriteLine("Nhap ten");
-            Ten = Console.ReadLine();
-            Console.WriteLine("Nhap tuoi");
-            Tuoi = int.Parse(Console.ReadLine());
-            thongTin = Ten + Tuoi;
-            ThongTin(thongTin);
-            Console.ReadLine();
+            Dem();
+                Console.ReadLine();
         }
-        static string ThongTin(string thongTin)
+        static void Dem() 
+        {
+            int A;    
+            Console.WriteLine("Nhap A");
+                A = int.Parse(Console.ReadLine());
+            for (int i = 0; i <= A; i++)
             {
-            Console.WriteLine(thongTin);
-            return Console.ReadLine();
+                Console.WriteLine(i);
             }
+        }
     }
 }
